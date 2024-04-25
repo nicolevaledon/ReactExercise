@@ -12,7 +12,7 @@ function App() {
 
   return (
     <>
-      <h1>State Exercise</h1>
+      <h1>To Do List</h1>
       <form onSubmit={handleSubmit}>
         <label htmlFor="toDotInput">Enter Task</label>
         <input
@@ -24,11 +24,11 @@ function App() {
         />
         <button type="submit">Enter</button>
       </form>
-      <ul>
+      <ol>
         {toDoList.map((element, index, array) => {
           return <li key={index}>{element}</li>;
         })}
-      </ul>
+      </ol>
     </>
   );
 }
